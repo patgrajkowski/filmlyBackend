@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "61aa011a107cad593b892a85"
+  },
+  "created": {
+    "$date": "2021-12-03T11:35:54.639Z"
+  },
+  "firstName": "Patryk",
+  "lastName": "Grajkowski",
+  "address": "Sosnowiec",
+  "phone": "123456789",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa0257107cad593b892a86"
+  },
+  "created": {
+    "$date": "2021-12-03T11:41:11.593Z"
+  },
+  "firstName": "Eustachy",
+  "lastName": "Kamiński",
+  "address": "ul. Kujawska 97 15-548 Białystok",
+  "phone": "518321946",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa027b107cad593b892a87"
+  },
+  "created": {
+    "$date": "2021-12-03T11:41:47.844Z"
+  },
+  "firstName": "Jolanta",
+  "lastName": "Wojciechowska",
+  "address": "ul. Bagażowa 9 02-651 Warszawa",
+  "phone": "518014506",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa02a3107cad593b892a88"
+  },
+  "created": {
+    "$date": "2021-12-03T11:42:27.654Z"
+  },
+  "firstName": "Marcin",
+  "lastName": "Woźniak",
+  "address": "ul. Macierzanki 32 40-632 Katowice",
+  "phone": "884545490",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa02c2107cad593b892a89"
+  },
+  "created": {
+    "$date": "2021-12-03T11:42:58.387Z"
+  },
+  "firstName": "Rafał",
+  "lastName": "Kaczmarek",
+  "address": "ul. Katalogowa 53 02-294 Warszawa",
+  "phone": "691185780",
+  "__v": 0
+}]

@@ -1,0 +1,371 @@
+[{
+  "_id": {
+    "$oid": "61aa0ca1c4d68466d95fa9d4"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa0ca1c4d68466d95fa9d7"
+      },
+      "firstName": "Keanu",
+      "lastName": "Reeves"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0ca1c4d68466d95fa9d6"
+      },
+      "firstName": "Laurence",
+      "lastName": "Fishburne"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0ca1c4d68466d95fa9d5"
+      },
+      "firstName": "Carrie-Anne",
+      "lastName": "Moss"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:25:05.582Z"
+  },
+  "title": "Matrix",
+  "genre": "Akcja / Sci-Fi",
+  "director": "Lilly Wachowski / Lana Wachowski",
+  "length": 136,
+  "rate": 7.6,
+  "plot": "Haker komputerowy Neo dowiaduje się od tajemniczych rebeliantów, że świat, w którym żyje, jest tylko obrazem przesyłanym do jego mózgu przez roboty.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa0d67c4d68466d95fa9d8"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa0d67c4d68466d95fa9db"
+      },
+      "firstName": "Tom",
+      "lastName": "Hanks"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0d67c4d68466d95fa9da"
+      },
+      "firstName": "David",
+      "lastName": "Morse"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0d67c4d68466d95fa9d9"
+      },
+      "firstName": "Bonnie",
+      "lastName": "Hunt"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:28:23.865Z"
+  },
+  "title": "Zielona mila",
+  "genre": "Dramat",
+  "director": "Frank Darabont",
+  "length": 188,
+  "rate": 8.6,
+  "plot": "Emerytowany strażnik więzienny opowiada przyjaciółce o niezwykłym mężczyźnie, którego skazano na śmierć za zabójstwo dwóch 9-letnich dziewczynek.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa0dc7c4d68466d95fa9dc"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa0dc7c4d68466d95fa9df"
+      },
+      "firstName": "Tom",
+      "lastName": "Hanks"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0dc7c4d68466d95fa9de"
+      },
+      "firstName": "Robin",
+      "lastName": "Wright"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0dc7c4d68466d95fa9dd"
+      },
+      "firstName": "Sally",
+      "lastName": "Field"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:29:59.193Z"
+  },
+  "title": "Forrest Gump",
+  "genre": "Dramat / Komedia",
+  "director": "Robert Zemeckis",
+  "length": 142,
+  "rate": 8.5,
+  "plot": "Historia życia Forresta, chłopca o niskim ilorazie inteligencji z niedowładem kończyn, który staje się miliarderem i bohaterem wojny w Wietnamie.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa0e84c4d68466d95fa9e0"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa0e84c4d68466d95fa9e3"
+      },
+      "firstName": "Mike",
+      "lastName": "Myers"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0e84c4d68466d95fa9e2"
+      },
+      "firstName": "Eddie",
+      "lastName": "Murphy"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0e84c4d68466d95fa9e1"
+      },
+      "firstName": "Cameron",
+      "lastName": "Diaz"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:33:08.503Z"
+  },
+  "title": "Shrek",
+  "genre": "Animacja / Familijny / Komedia",
+  "director": "Andrew Adamson / Vicky Jenson",
+  "length": 90,
+  "rate": 7.8,
+  "plot": "By odzyskać swój dom, brzydki ogr z gadatliwym osłem wyruszają uwolnić piękną księżniczkę.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa0f24c4d68466d95fa9e4"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa0f24c4d68466d95fa9e7"
+      },
+      "firstName": "John",
+      "lastName": "Travolta"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0f24c4d68466d95fa9e6"
+      },
+      "firstName": "Samuel L.",
+      "lastName": "Jackson"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0f24c4d68466d95fa9e5"
+      },
+      "firstName": "Uma",
+      "lastName": "Thurman"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:35:48.197Z"
+  },
+  "title": "Pulp Fiction",
+  "genre": "Gangsterski",
+  "director": "Quentin Tarantino",
+  "length": 154,
+  "rate": 8.4,
+  "plot": "Przemoc i odkupienie w opowieści o dwóch płatnych mordercach pracujących na zlecenie mafii, żonie gangstera, bokserze i parze okradającej ludzi w restauracji.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa0f87c4d68466d95fa9e8"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa0f87c4d68466d95fa9eb"
+      },
+      "firstName": "François",
+      "lastName": "Cluzet"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0f87c4d68466d95fa9ea"
+      },
+      "firstName": "Omar",
+      "lastName": "Sy"
+    },
+    {
+      "_id": {
+        "$oid": "61aa0f87c4d68466d95fa9e9"
+      },
+      "firstName": "Audrey",
+      "lastName": "Fleurot"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:37:27.055Z"
+  },
+  "title": "Nietykalni",
+  "genre": "Biograficzny / Dramat / Komedia",
+  "director": "Olivier Nakache / Éric Toledano",
+  "length": 112,
+  "rate": 8.7,
+  "plot": "Sparaliżowany milioner zatrudnia do opieki młodego chłopaka z przedmieścia, który właśnie wyszedł z więzienia.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa105ec4d68466d95fa9ec"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa105ec4d68466d95fa9ef"
+      },
+      "firstName": "Leonardo",
+      "lastName": "DiCaprio"
+    },
+    {
+      "_id": {
+        "$oid": "61aa105ec4d68466d95fa9ee"
+      },
+      "firstName": "Joseph",
+      "lastName": "Gordon-Levitt"
+    },
+    {
+      "_id": {
+        "$oid": "61aa105ec4d68466d95fa9ed"
+      },
+      "firstName": "Elliot",
+      "lastName": "Page"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:41:02.235Z"
+  },
+  "title": "Incepcja",
+  "genre": "Surrealistyczny / Thriller / Sci-Fi",
+  "director": "Christopher Nolan",
+  "length": 148,
+  "rate": 8.3,
+  "plot": "Czasy, gdy technologia pozwala na wchodzenie w świat snów. Złodziej Cobb ma za zadanie wszczepić myśl do śpiącego umysłu.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa1107c4d68466d95fa9f0"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa1107c4d68466d95fa9f3"
+      },
+      "firstName": "Ashton",
+      "lastName": "Kutcher"
+    },
+    {
+      "_id": {
+        "$oid": "61aa1107c4d68466d95fa9f2"
+      },
+      "firstName": "Amy",
+      "lastName": "Smart"
+    },
+    {
+      "_id": {
+        "$oid": "61aa1107c4d68466d95fa9f1"
+      },
+      "firstName": "Eric",
+      "lastName": "Stoltz"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:43:51.008Z"
+  },
+  "title": "Efekt motyla",
+  "genre": "Thriller / Sci-Fi",
+  "director": "J. Mackye Gruber / Eric Bress",
+  "length": 113,
+  "rate": 7.8,
+  "plot": "Evan, który potrafi podróżować w czasie, przekona się, że nawet najdrobniejsza zmiana w przeszłości ma kolosalny wpływ na teraźniejszość.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa1183c4d68466d95fa9f4"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa1183c4d68466d95fa9f7"
+      },
+      "firstName": "Christian",
+      "lastName": "Bale"
+    },
+    {
+      "_id": {
+        "$oid": "61aa1183c4d68466d95fa9f6"
+      },
+      "firstName": "Heath",
+      "lastName": "Ledger"
+    },
+    {
+      "_id": {
+        "$oid": "61aa1183c4d68466d95fa9f5"
+      },
+      "firstName": "Michael",
+      "lastName": "Caine"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:45:55.246Z"
+  },
+  "title": "Mroczny rycerz",
+  "genre": "Akcja / Sci-Fi",
+  "director": "Christopher Nolan",
+  "length": 152,
+  "rate": 8,
+  "plot": "Batman, z pomocą porucznika Gordona oraz prokuratora Harveya Denta, występuje przeciwko przerażającemu i nieobliczalnemu Jokerowi, który chce pogrążyć Gotham City w chaosie.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa11f0c4d68466d95fa9f8"
+  },
+  "actors": [
+    {
+      "_id": {
+        "$oid": "61aa11f0c4d68466d95fa9fb"
+      },
+      "firstName": "Jim",
+      "lastName": "Carrey"
+    },
+    {
+      "_id": {
+        "$oid": "61aa11f0c4d68466d95fa9fa"
+      },
+      "firstName": "Laura",
+      "lastName": "Linney"
+    },
+    {
+      "_id": {
+        "$oid": "61aa11f0c4d68466d95fa9f9"
+      },
+      "firstName": "Noah",
+      "lastName": "Emmerich"
+    }
+  ],
+  "created": {
+    "$date": "2021-12-03T12:47:44.292Z"
+  },
+  "title": "Truman Show",
+  "genre": "Dramat / Komedia / Sci-Fi",
+  "director": "Peter Weir",
+  "length": 103,
+  "rate": 7.4,
+  "plot": "Truman Burbank odkrywa, że jest głównym bohaterem reality show nadawanego 24 godziny na dobę.",
+  "__v": 0
+}]

@@ -1,0 +1,101 @@
+[{
+  "_id": {
+    "$oid": "61aa1a954fb2db7ad1d70ae6"
+  },
+  "dateOut": {
+    "$date": "2021-12-03T13:24:37.351Z"
+  },
+  "dateReturned": {
+    "$date": "2021-12-05T13:24:37.351Z"
+  },
+  "actualDateReturned": null,
+  "customer": {
+    "_id": {
+      "$oid": "61aa02c2107cad593b892a89"
+    },
+    "firstName": "Rafał",
+    "lastName": "Kaczmarek"
+  },
+  "movie": {
+    "_id": {
+      "$oid": "61aa0f24c4d68466d95fa9e4"
+    },
+    "title": "Pulp Fiction"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa1dc91d3eae86cc0cf2e3"
+  },
+  "dateOut": {
+    "$date": "2021-12-03T13:38:17.774Z"
+  },
+  "dateReturned": {
+    "$date": "2021-12-05T13:38:17.774Z"
+  },
+  "actualDateReturned": null,
+  "customer": {
+    "_id": {
+      "$oid": "61aa011a107cad593b892a85"
+    },
+    "firstName": "Patryk",
+    "lastName": "Grajkowski"
+  },
+  "movie": {
+    "_id": {
+      "$oid": "61aa0e84c4d68466d95fa9e0"
+    },
+    "title": "Shrek"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa1ddf1d3eae86cc0cf2e4"
+  },
+  "dateOut": {
+    "$date": "2021-12-03T13:38:39.123Z"
+  },
+  "dateReturned": {
+    "$date": "2021-12-05T13:38:39.123Z"
+  },
+  "actualDateReturned": null,
+  "customer": {
+    "_id": {
+      "$oid": "61aa027b107cad593b892a87"
+    },
+    "firstName": "Jolanta",
+    "lastName": "Wojciechowska"
+  },
+  "movie": {
+    "_id": {
+      "$oid": "61aa105ec4d68466d95fa9ec"
+    },
+    "title": "Incepcja"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61aa1df21d3eae86cc0cf2e5"
+  },
+  "dateOut": {
+    "$date": "2021-12-03T13:38:58.271Z"
+  },
+  "dateReturned": {
+    "$date": "2021-12-05T13:38:58.271Z"
+  },
+  "actualDateReturned": null,
+  "customer": {
+    "_id": {
+      "$oid": "61aa02a3107cad593b892a88"
+    },
+    "firstName": "Marcin",
+    "lastName": "Woźniak"
+  },
+  "movie": {
+    "_id": {
+      "$oid": "61aa0ca1c4d68466d95fa9d4"
+    },
+    "title": "Matrix"
+  },
+  "__v": 0
+}]
