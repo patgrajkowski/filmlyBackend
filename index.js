@@ -21,5 +21,5 @@ app.use('/api/customers', customers);
 app.use('/api/movies', movies);
 app.use('/api/rentals', rentals);
 
-const port = 3001;
+const port = process.env.PORT || 3001;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
