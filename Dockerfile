@@ -5,5 +5,5 @@ COPY ./app/index.js /usr/src/backendApp
 COPY ./app/models /usr/src/backendApp
 COPY ./app/routes /usr/src/backendApp
 RUN npm install
-COPY . .
+COPY ./app .
 CMD ["node", "index.js"]
