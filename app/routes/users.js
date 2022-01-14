@@ -35,7 +35,10 @@ router.post('/', async (req, res) => {
     id: user._id,
   });
   console.log(user._id);
-  const token = jwt.sign({ _id: user._id, isAdmin: user.isAdmin }, config.get('JWT_SECRET'));
+  const token = jwt.sign(
+    { _id: user._id, isAdmin: user.isAdmin },
+    config.get('jwtSecret')
+  );
   await userWithId.save();
 
   res.header('x-auth-token', token).send(userWithId);
