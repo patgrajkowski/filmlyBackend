@@ -1,4 +1,5 @@
 const Joi = require('joi');
+Joi.objectId = require('joi-objectid')(Joi);
 const mongoose = require('mongoose');
 
 const Movie = mongoose.model(
@@ -54,15 +55,23 @@ const Movie = mongoose.model(
           img: {
             type: String,
           },
+          role: {
+            type: String,
+            required: true,
+            minlength: 5,
+            maxlength: 50,
+          },
         }),
       ],
       required: true,
     },
     img: { type: String, required: true },
-    stock: { type: Number, default: 0 },
     created: {
       type: Date,
       default: Date.now,
+    },
+    id: {
+      type: String,
     },
   })
 );
@@ -77,7 +86,8 @@ function validateMovie(movie) {
     plot: Joi.string().required(),
     actors: Joi.array().required(),
     img: Joi.string().required(),
-    stock: Joi.number().min(0),
+    created: Joi.date(),
+    id: Joi.objectId(),
   };
 
   return Joi.validate(movie, schema);
