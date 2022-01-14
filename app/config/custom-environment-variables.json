@@ -1,3 +1,4 @@
 {
-  "jwtSecret": "JWT_SECRET"
+  "jwtSecret": "JWT_SECRET",
+  "mongoUrl": "MONGO_URL"
 }
