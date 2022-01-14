@@ -1,4 +1,5 @@
 const Joi = require('joi');
+const config = require('config');
 Joi.objectId = require('joi-objectid')(Joi);
 const mongoose = require('mongoose');
 const users = require('./routes/users');
