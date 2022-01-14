@@ -1,6 +1,5 @@
 const Joi = require('joi');
 Joi.objectId = require('joi-objectid')(Joi);
-const { createAdminCRUD } = require('ra-expressjs-mongodb-scaffold');
 const mongoose = require('mongoose');
 const users = require('./routes/users');
 const movies = require('./routes/movies');

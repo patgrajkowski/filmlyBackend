@@ -1,3 +1,4 @@
+const config = require('config');
 const _ = require('lodash');
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
@@ -34,10 +35,7 @@ router.post('/', async (req, res) => {
     id: user._id,
   });
   console.log(user._id);
-  const token = jwt.sign(
-    { _id: user._id, isAdmin: user.isAdmin },
-    process.env.JWT_SECRET
-  );
+  const token = jwt.sign({ _id: user._id, isAdmin: user.isAdmin }, config.get('JWT_SECRET'));
   await userWithId.save();
 
   res.header('x-auth-token', token).send(userWithId);
