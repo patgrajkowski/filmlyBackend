@@ -58,6 +58,7 @@ router.post('/', [auth, admin], async (req, res) => {
     actors: movie.actors,
     img: movie.img,
     id: movie._id,
+    _id: movie._id,
   });
   await movieWithId.save();
 
