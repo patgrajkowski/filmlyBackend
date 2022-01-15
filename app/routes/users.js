@@ -14,10 +14,8 @@ router.get('/', [auth, admin], async (req, res) => {
   res.send(users);
 });
 router.get('/me', auth, async (req, res) => {
-  const user = await User.findById(req.user._id);
-  console.log(req.user._id);
-  console.log(user);
-  res.send(user);
+  const { nickname, avatar, _id } = await User.findById(req.user._id);
+  res.send({ nickname, avatar, _id });
 });
 
 router.post('/', async (req, res) => {
@@ -25,7 +23,9 @@ router.post('/', async (req, res) => {
   if (error) return res.status(400).send(error.details[0].message);
   let user = await User.findOne({ email: req.body.email });
   if (user) return res.status(400).send('User already registered');
-  user = new User(_.pick(req.body, ['nickname', 'email', 'password']));
+  user = new User(
+    _.pick(req.body, ['nickname', 'email', 'password', 'avatar'])
+  );
   const salt = await bcrypt.genSalt(10);
   user.password = await bcrypt.hash(user.password, salt);
   let userWithId = new User({
@@ -33,6 +33,7 @@ router.post('/', async (req, res) => {
     email: user.email,
     password: user.password,
     id: user._id,
+    avatar: user.avatar,
   });
   console.log(user._id);
   const token = jwt.sign(

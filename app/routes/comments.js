@@ -3,36 +3,38 @@ const { Movie } = require('../models/movie');
 const { User } = require('../models/user');
 const express = require('express');
 const router = express.Router();
+const auth = require('../middleware/auth');
 
 router.get('/', async (req, res) => {
   const comments = await Comment.find().sort('-created');
   res.send(comments);
 });
 
-router.post('/', async (req, res) => {
+router.post('/movie/:id', auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const user = await User.findById(req.body.customerId);
-  if (!user) return res.status(400).send('Invalid customer.');
-
-  const movie = await Movie.findById(req.body.movieId);
+  const user = await User.findById(req.user._id);
+  const movie = await Movie.findById(req.params.id);
   if (!movie) return res.status(400).send('Invalid movie.');
 
   const comment = new Comment({
-    customer: {
+    user: {
       _id: user._id,
       nickname: user.nickname,
+      avatar: user.avatar,
     },
     movie: {
       _id: movie._id,
       title: movie.title,
     },
+    comment: req.body.comment,
   });
   res.send(comment);
+  await comment.save();
 });
 
-router.get(':id', async (req, res) => {
+router.get('/movie/:id', async (req, res) => {
   try {
     const comments = await Comment.find({ 'movie._id': req.params.id });
     res.send(comments);

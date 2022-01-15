@@ -14,6 +14,10 @@ const User = mongoose.model(
       type: String,
       required: true,
     },
+    avatar: {
+      type: String,
+      required: true,
+    },
     password: {
       type: String,
       required: true,
@@ -40,6 +44,7 @@ function validateUser(user) {
     created: Joi.date(),
     id: Joi.string(),
     isAdmin: Joi.boolean(),
+    avatar: Joi.string(),
   };
   const { nickname, email, password, created } = user;
   return Joi.validate({ nickname, email, password, created }, schema);

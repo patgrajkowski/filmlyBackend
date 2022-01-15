@@ -12,6 +12,9 @@ const Comment = mongoose.model(
           minlength: 2,
           maxlength: 50,
         },
+        avatar: {
+          type: String,
+        },
       }),
       required: true,
     },
@@ -27,6 +30,11 @@ const Comment = mongoose.model(
       }),
       required: true,
     },
+    comment: {
+      type: String,
+      trim: true,
+      minlength: 10,
+    },
     created: {
       type: Date,
       default: Date.now,
@@ -36,8 +44,7 @@ const Comment = mongoose.model(
 
 function validateComment(comment) {
   const schema = {
-    userId: Joi.objectId().required(),
-    movieId: Joi.objectId().required(),
+    comment: Joi.string().min(10).required(),
   };
 
   return Joi.validate(comment, schema);
