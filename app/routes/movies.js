@@ -24,45 +24,38 @@ router.post('/', [auth, admin], async (req, res) => {
     created,
     id,
   } = req.body;
-  const { error } = validate({
-    title,
-    genre,
-    director,
-    length,
-    rate,
-    plot,
-    actors,
-    img,
-    created,
-    id,
-  });
-  if (error) return res.status(400).send(error.details[0].message);
-
-  const movie = new Movie({
-    title: req.body.title,
-    genre: req.body.genre,
-    director: req.body.director,
-    length: req.body.length,
-    rate: req.body.rate,
-    plot: req.body.plot,
-    actors: req.body.actors,
-    img: req.body.img,
-  });
-  const movieWithId = new Movie({
-    title: movie.title,
-    genre: movie.genre,
-    director: movie.director,
-    length: movie.length,
-    rate: movie.rate,
-    plot: movie.plot,
-    actors: movie.actors,
-    img: movie.img,
-    id: movie._id,
-    _id: movie._id,
-  });
-  await movieWithId.save();
-
-  res.send(movieWithId);
+  try {
+    const { error } = validate({
+      title,
+      genre,
+      director,
+      length,
+      rate,
+      plot,
+      actors,
+      img,
+      created,
+      id,
+    });
+    if (!error) {
+      const movie = new Movie({
+        title: req.body.title,
+        genre: req.body.genre,
+        director: req.body.director,
+        length: req.body.length,
+        rate: req.body.rate,
+        plot: req.body.plot,
+        actors: req.body.actors,
+        img: req.body.img,
+      });
+      await movie.save();
+    }
+    if (error) {
+      res.status(400).send(error.details[0].message);
+    }
+  } catch (e) {
+    console.log(e);
+  }
 });
 
 router.put('/:id', [auth, admin], async (req, res) => {
@@ -90,27 +83,29 @@ router.put('/:id', [auth, admin], async (req, res) => {
     created,
     id,
   });
-  if (error) return res.status(400).send(error.details[0].message);
-  const movie = await Movie.findByIdAndUpdate(
-    req.params.id,
-    {
-      title: req.body.title,
-      genre: req.body.genre,
-      director: req.body.director,
-      length: req.body.length,
-      rate: req.body.rate,
-      plot: req.body.plot,
-      actors: req.body.actors,
-      img: req.body.img,
-      stock: req.body.stock,
-    },
-    { new: true }
-  );
+  if (error) res.status(400).send(error.details[0].message);
+  if (!error) {
+    const movie = await Movie.findByIdAndUpdate(
+      req.params.id,
+      {
+        title: req.body.title,
+        genre: req.body.genre,
+        director: req.body.director,
+        length: req.body.length,
+        rate: req.body.rate,
+        plot: req.body.plot,
+        actors: req.body.actors,
+        img: req.body.img,
+        stock: req.body.stock,
+      },
+      { new: true }
+    );
 
-  if (!movie)
-    return res.status(404).send('The movie with the given ID was not found.');
+    if (!movie)
+      return res.status(404).send('The movie with the given ID was not found.');
 
-  res.send(movie);
+    res.send(movie);
+  }
 });
 
 router.delete('/:id', [auth, admin], async (req, res) => {
