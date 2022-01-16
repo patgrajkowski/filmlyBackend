@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
     { _id: user._id, isAdmin: user.isAdmin },
     config.get('jwtSecret')
   );
-  res.send(token);
+  res.send({ token, isAdmin: user.isAdmin });
 });
 
 function validate(req) {
