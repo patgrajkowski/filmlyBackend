@@ -49,6 +49,7 @@ router.post('/', [auth, admin], async (req, res) => {
         img: req.body.img,
       });
       await movie.save();
+      res.send(201);
     }
     if (error) {
       res.status(400).send(error.details[0].message);
