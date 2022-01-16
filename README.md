@@ -58,7 +58,7 @@ export MONGO_URL= #Url to mongodb database
 #Clone this repository
 git clone https://github.com/patgrajkowski/filmlyBackend.git
 #Go into repositorty
-cd filmlyBackend
+cd filmlyBackend/app
 #Download dependencies
 npm install
 #Run
